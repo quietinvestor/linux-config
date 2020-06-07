@@ -1,0 +1,22 @@
+# Ignore everything.
+*
+
+# Except...
+
+# Declare all files, directories and subdirectories explicitly in the
+# negation (!), otherwise they are ignored as part of everything (*).
+
+!.gitignore
+!.vimrc
+
+# Any .vim files contained within subdirectories not ignored.
+!*/**/*.vim
+
+# .vim directory (subdirectories ignored as part of everything (*)).
+!.vim/
+
+# Negate subdirectory by subdirectory to add to exceptions. A single
+# line path will only negate the final subdirectory but not its parent
+# directories, such that the final subdirectory will still not be visible.
+!.vim/after/
+!.vim/after/ftplugin/
