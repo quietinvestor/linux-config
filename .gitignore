@@ -7,7 +7,12 @@
 # negation (!), otherwise they are ignored as part of everything (*).
 
 !.gitignore
+
+# vim configuration file.
 !.vimrc
+
+# tmux configuration file.
+!.tmux.conf
 
 # Any .vim files contained within subdirectories not ignored.
 !*/**/*.vim

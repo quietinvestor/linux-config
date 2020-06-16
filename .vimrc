@@ -49,6 +49,11 @@ call plug#end()
 " enforce displaying italics.  
 let g:gruvbox_italic=1
 
+" Colour fix for termguicolors to work in tmux.
+" See :h xterm-true-color for details.
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
 " By default gruvbox will act as usual 256-color theme, but colors wouldn't
 " be that vivid due to limitations of 256-palette. Neovim and recent Vim
 " support true color terminal out of the box with just a single
