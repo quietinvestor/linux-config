@@ -25,3 +25,4 @@
 # directories, such that the final subdirectory will still not be visible.
 !.vim/after/
 !.vim/after/ftplugin/
+!.vim/autoload/
