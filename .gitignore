@@ -8,14 +8,11 @@
 
 !.gitignore
 
-# vim configuration file.
-!.vimrc
-
 # tmux configuration file.
 !.tmux.conf
 
-# Any .vim files contained within subdirectories not ignored.
-!*/**/*.vim
+# vim configuration file.
+!.vimrc
 
 # .vim directory (subdirectories ignored as part of everything (*)).
 !.vim/
@@ -26,3 +23,15 @@
 !.vim/after/
 !.vim/after/ftplugin/
 !.vim/autoload/
+
+# Any .vim files contained within subdirectories not ignored.
+!*/**/*.vim
+
+# Apply the above also for Neovim folders.
+!.config/
+!.config/nvim/
+!.config/nvim/lua/
+!.config/nvim/lua/modules/
+
+# Any .lua files contained within subdirectories not ignored.
+!*/**/*.lua
